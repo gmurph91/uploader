@@ -141,3 +141,15 @@
   border-radius: 4px;
   margin-top: 6px;
 }
+
+.playback-speed {
+  opacity: 0;
+  position: absolute;
+    bottom: 41px;
+    left: 130px;
+    transition: 1s all;
+}
+
+#modal-video:hover + .playback-speed, #modal-video:focus + .playback-speed, .playback-speed:hover {
+  opacity: 1;
+}

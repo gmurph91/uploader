@@ -11,7 +11,7 @@ export default class App extends Component {
       this.state = {
         selectedFile: null,
         loaded: 0,
-        previewsrc: "",
+        previewsrc: ""
       }
   }
 
@@ -119,6 +119,10 @@ closePreview = () => {
     previewsrc: ""
   })
 }
+
+changeSpeed = (e) => {
+  document.querySelector('video').playbackRate = e.target.value;
+}
   
 render(){
   return (
@@ -137,6 +141,12 @@ render(){
         <button className="closeButton" onClick={this.closePreview}>X</button>
           <img id="modal-image" src={this.state.previewsrc} alt="preview" className="preview-image hide"></img>
           <video id="modal-video" className="preview-video hide" controls autoPlay src={this.state.previewsrc} type="video/mp4"></video>
+        <select className="playback-speed" onChange={this.changeSpeed} defaultValue="1.0">
+        <option value="0.5">0.5x</option>
+          <option value="1.0">1.0x</option>
+          <option value="2.0">2.0x</option>
+          <option value="3.0">3.0x</option>
+        </select>
         </div>
         <div className="modal-overlay hide" id="modal-overlay" onClick={this.closePreview}></div>
       </div>
