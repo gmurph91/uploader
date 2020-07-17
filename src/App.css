@@ -1,0 +1,143 @@
+.file-box form {
+  margin: auto;
+}
+.file-box {
+  display: flex;
+  position: relative;
+}
+.file-box:after {
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: "";
+  background-image: url(https://lh3.googleusercontent.com/proxy/Ntb5nLLqwDtgZyfld_r1_-2IV7-KfSZGKko4_IcHPtActqwurbPVsW9RwKWydNnY7QRcpLT5guW01HIGSKvhPr31gBI_B0fNEKGRw3k1gEnayDZgB1_8_Lhng60);
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.file-box:before {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  content: " or drag it here. ";
+  color: #3b99d4;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.file-input {
+  font-size: 18px;
+  outline: 2px dashed #3b99d4;
+  outline-offset: -10px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: 120px 25px 85px 140px;
+}
+.upload-button {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+}
+.Toastify__toast-container--top-right {
+  top: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+.progress {
+  height: 29px !important;
+}
+.progress-bar {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+.thumbnail {
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+}
+.preview-image {
+  width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  margin: auto;
+}
+.preview-video {
+  width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  margin: auto;
+}
+.modal {
+  z-index: 100;
+  width: 90%;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  transition: 1.1s ease-out;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  border-radius: 10px;
+  display: block;
+  height:fit-content;
+}
+.modal-overlay {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 43%;
+}
+
+.closeButton {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  padding: 12px !important;
+  box-shadow: none !important;
+  color: black !important;
+  z-index: 200;
+}
+
+.closeButton:hover {
+  color: darkgray !important;
+  background: none;
+}
+
+.closeButton:active {
+  position: inherit;
+  top: 0;
+}
+
+.thumbnail {
+  display: inline-block !important;
+  border: none;
+  border-radius: none;
+}
+
+.thumbnail-title {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+.media-block {
+  margin: auto;
+  width: 496px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 6px;
+}
